@@ -32,6 +32,7 @@ public class Week02
         int avrage = (total / amount);
         System.out.println("The Avrage is " + amount);
         System.out.println("The Avrage is " + avrage);
+        int num;
 
     }     
 }
