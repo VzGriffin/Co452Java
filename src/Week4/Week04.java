@@ -6,6 +6,9 @@ import java.util.Arrays;
 public class Week04 
 {
     public static final String CONSOLE_CLEAR = "\033[H\033[2J";
+
+    public static ArrayList<Song> songlist;
+
     public static void main(String[] args)
     {
         System.out.println(CONSOLE_CLEAR);
@@ -17,9 +20,9 @@ public class Week04
         System.out.println(" by Myles Griffiths");
         System.out.println();
 
-        ArrayList<Song> songlist = new ArrayList<Song>();
+        songlist = new ArrayList<Song>();
 
-        Song sweaterwather = new Song("Sweater Wather",              "The Neighbourhood", 75647);
+        Song sweaterwather = new Song("Sweater Wather", "The Neighbourhood", 75647);
         Song heatwave = new Song("Heat Wave", "Glass Animals", 65778);
         Song tekit = new Song("Tek It", "Cafune", 98973);
         Song yovoy = new Song("Yo Voy", "Zion & Lennox", 134256);
@@ -42,14 +45,28 @@ public class Week04
         songlist.add(myway);
 
 
+
         
         for(Song current : songlist)
         {
             current.print();
         }
 
-
+            
         
-    }     
+    }   
+    
+    public Song remove(int id)
+    {
+        Song title = findBytitle(id);
+        if (songlist != null)
+        songlist.remove(songlist);
+        else 
+        System.out.println("Could not find Song");
+    }
+    
+
+
+
     
 }
