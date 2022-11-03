@@ -2,6 +2,7 @@ package Week4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.jar.Attributes.Name;
 
 public class Week04 
 {
@@ -58,12 +59,17 @@ public class Week04
     
     public Song remove(String Song)
     {
-        Song title = findBytitle(id);
+        Song title = findBytitle();
         if (songlist != null)
-        songlist.remove(songlist);
+        songlist.remove(title);
         else 
         System.out.println("Could not find Song");
+        return title;
 
+    }
+
+    private Song findBytitle() {
+        return null;
     }
     
 
