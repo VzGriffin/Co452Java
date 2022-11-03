@@ -56,13 +56,14 @@ public class Week04
         
     }   
     
-    public Song remove(int id)
+    public Song remove(String Song)
     {
         Song title = findBytitle(id);
         if (songlist != null)
         songlist.remove(songlist);
         else 
         System.out.println("Could not find Song");
+
     }
     
 
